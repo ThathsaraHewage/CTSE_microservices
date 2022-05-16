@@ -24,4 +24,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/productsmgt:$(date +%s)
+          tags: ${{ secrets.DOCKER_USERNAME }}/products-2022-ctse:${{github.sha}}
